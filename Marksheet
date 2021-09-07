@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main(){
+	float maths,chemistry,physics,english,computer_science,total_marks,percantage;
+	printf("Enter your maths marks : ");
+	scanf("%f",&maths);
+	printf("Enter your chemistry marks : ");
+	scanf("%f",&chemistry);
+	printf("Enter your physics marks : ");
+	scanf("%f",&physics);
+	printf("Enter your english marks : ");
+	scanf("%f",&english);
+	printf("Enter your computer science marks : ");
+	scanf("%f",&computer_science);
+	
+	total_marks = (maths+chemistry+physics+english+computer_science);
+	percantage = (total_marks/500)*100;
+	
+	if(percantage<33){
+		printf("You are FAIL");
+	}else if(percantage>=33 && percantage<40){
+		printf("Your Grade is 'C' ");
+	}else if(percantage>=40 && percantage<60){
+		printf("Your Grade is 'B' ");
+	}else if(percantage>=60 && percantage<75){
+		printf("Your Grade is 'A' ");
+	}else{
+		printf("Your Grade is 'A++' ");
+	}
+	printf("Your Total marks is %f\n",total_marks);
+	printf("Your Percantage is %f\n",percantage);
+return 0;
+}
